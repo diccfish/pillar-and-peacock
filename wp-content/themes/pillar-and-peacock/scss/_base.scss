@@ -1,0 +1,615 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: 'Montserrat', $sans-serif;
+	font-weight: 400;
+	position: relative;
+	margin: 0;
+	color: $darkgrey;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	margin: 0 auto;
+	width: 360px;
+}	
+.box {
+	padding: 40px;
+	background: #FFF;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited, button{
+	color: $link-color;
+	text-decoration: none;
+	@include transition(all 0.2s ease-in-out);
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+		text-decoration: none;
+	}
+
+	/* on click */
+	&:active {
+
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: $sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: 300;
+	text-transform: uppercase;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 3em;
+	line-height: 1.75em;
+}
+
+h2, .h2 {
+	font-size: 2.5em;
+	line-height: 1.25em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+	font-weight: 600;
+}
+
+h4, .h4 {
+	font-size: .95em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/******************************************************************
+FORM STYLES
+******************************************************************/
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	box-shadow: none;
+	border: none;
+	padding: 10px 10px;
+	font-size: .85em;
+	font-family: $sans-serif;
+	font-weight: 300;
+	&:focus {
+		outline: none;
+	}
+}
+
+input[type="submit"],
+button[type="submit"] { 
+	padding: 7px 10px;
+	text-transform: uppercase;
+	font-size: .75em;
+	font-family: $sans-serif;
+	background: $green;
+	color: $white;
+	border: none;
+	@include transition(all 0.2s ease-in-out);
+	&:hover {
+		background: $white;
+		color: $black;
+	}
+}
+
+/*********************
+GLOBAL STYLES
+*********************/
+.text-link-frame, .text-frame {
+	background: url(../images/text-frame-bg.png) no-repeat left center;
+	padding: 10px 0 10px 50px;
+	font-size: 15px;
+	color: $gold;
+	letter-spacing: .3em;
+	border-bottom: 1px solid $gold;
+	text-transform: uppercase;	
+}
+.text-link-frame {
+	float: right;
+	margin: 1em 0;
+}
+
+
+/*********************
+HEADER SYTLES
+*********************/
+   
+.site-header {
+	h1 {
+		margin-top: 1.5em;
+		margin-bottom: 0;
+		a {
+			svg {
+				width: 100%;
+				height: 100px;
+			}
+		}
+	}
+	#tagline {
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: .3em;
+		background: $green;
+		color: $white;
+		margin: 2.75em 0 8em;
+		padding: .75em 0;
+		text-align: center;
+	}	
+}
+
+/* Pattern Styles */
+
+.home header ul.social-icons{
+	background: url(../images/pattern_victorian_border.png) 0 -16px repeat;
+}
+
+.page-template-blog-php header ul.social-icons {
+	background: url(../images/pattern_dots.png) repeat;
+}
+
+.page-template-portfolio-php header ul.social-icons{
+	background: url(../images/pattern_cross_hatch.png) 0 -23px repeat;
+}
+
+
+.page-id-8 header ul.social-icons{
+	background: url(../images/pattern_chevron.png) repeat;
+}
+
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.main-menu { 
+	border: 2px solid $green;
+	ul#menu-main-menu {
+		float: left;
+		margin: 0;
+		border-bottom: 2px solid $green;
+		li {
+			list-style: none;
+			float: left;
+			text-align: center;
+			margin-left: 0;
+			&:first-of-type, &:nth-of-type(2) {
+				border-bottom: 2px solid $green;
+				margin: 0;
+				width: 50%;
+			}
+			&:nth-of-type(1n+3) {
+				width: 33.33%;
+			}
+			a {
+				text-decoration: none;
+				color: $green;
+				font-family: $sans-serif;
+				font-size: 12px;
+				letter-spacing: .15em;
+				text-transform: uppercase;
+				display: block;
+				border-left: 2px solid $green;
+				padding: 12px 0;
+				&:hover {
+					background: $green;
+					color: white;
+				}
+			}			
+			&:first-child a{
+				border-left: none;
+			}
+			&:last-child a{
+			}
+			&:nth-of-type(3) a {
+				border: none;
+			}
+		}	
+	}
+	ul.social-icons {
+		float: left;
+		margin: 0;
+		li {
+			display: inline-block;
+			float: right;
+			a {
+				display: block;
+				text-decoration: none;
+				padding: 12px 15px;
+				color: #FFF;
+				background: $green;
+			}
+			&:last-child a {
+				padding-left: 16px;
+			}
+		}
+	}
+}
+
+
+/*********************
+PAGE & CONTENT STYLES
+*********************/
+
+.content-wrapper {
+	position: relative;
+	h2 {
+		&.text-frame {
+			margin: 0 0 1em 0;
+			float: left;
+		}
+	}
+	a {
+		&.text-frame {
+			float: right;
+			margin: 2.75em 0;
+		}
+	}
+}
+
+.page-intro {
+	color: $darkgrey;
+	font-family: $secondfont;
+	font-size: .9125em;
+	font-weight: normal;
+	line-height: 2em;
+	margin: 0 10% 3em;
+	text-align: center;
+	width: 80%;
+}
+.extra-space {
+	margin: 3em 10%;
+}
+
+.image-tiles {
+	clear: both;
+	.row {
+		img {
+			display: inline-block;
+			position: relative;
+			max-height: 25em;
+		}
+		&:nth-of-type(2n+1) {
+			img:nth-of-type(1) {
+				width: 68.75%;
+			}
+			img:nth-of-type(2) {
+				width: 30.25%;
+			}
+		}
+		&:nth-of-type(2n+2) {
+			img:nth-of-type(1) {
+				width: 30.25%;
+			}
+			img:nth-of-type(2) {
+				width: 68.75%;
+			}
+		}
+	}
+	.post {
+		display: inline-block;
+		position: relative;
+		img {
+			width: 100%;
+		}
+		&:nth-of-type(4n+1) {
+			width: 68.75%;
+		}
+		&:nth-of-type(4n+2) {
+			width: 30.25%;
+		}
+		&:nth-of-type(4n+3) {
+			width: 30.25%;
+		}
+		&:nth-of-type(4n+4) {
+			width: 68.75%;
+		}
+		.text-link-block {
+			bottom: 1em;
+			border: 2px solid #fff;
+			color: #fff;
+			left: 25%;
+			position: absolute;
+			padding: 1em;
+			right: 25%;
+			text-align: center;
+			width: 50%;
+			z-index: 999;
+			&:hover {
+				background: #fff;
+				color: $green;
+			}
+		}
+	}
+}
+
+.page-image {
+	margin: 5em 7% 6em;
+	padding: 0 1em;
+	width: 86%;
+	border-top: 1px solid $gold;
+	border-bottom: 1px solid $gold;
+	img {
+		width: 94%;
+		padding: 1em 1.1em;
+		border-right: 1px solid $gold;
+		border-left: 1px solid $gold;
+		display: block;
+		margin: 0 3%;
+	}
+}
+
+.fpo {	
+	position: relative;
+	.fpo-left, .fpo-right {
+		color: $reallydarkgrey;
+		display: inline-block;
+		font-family: $secondfont;
+		font-size: .875em;
+		line-height: 1.5em;
+		padding: 3em 12.5%;
+		position: relative;
+		width: 100%;
+		.silhouette {
+			margin: 0 5%;
+			width: 90%;
+		}
+		h3 {
+			border: 3px solid rgba(216,50,103,0.95);
+			color: rgba(216,50,103,.95);
+			float: left;
+			font-weight: 300;
+			letter-spacing: 2px;
+			margin: 0;
+			padding: 1em;
+			position: absolute;
+			text-align: center;
+			text-transform: uppercase;
+			top: 8em;
+			width: 80%;
+		}
+		p {
+			margin: 3em 0 4em;
+		}
+	}
+	.fpo-left {
+		background: $darkyellow;
+	}
+	.fpo-right {
+		background: $lightyellow;
+		margin-left: -4px;
+	}
+	#tennessee, #virginia {
+		height: 6.5em;
+		margin: 0 10% 2em;
+		width: 80%;
+	}
+}
+
+.about-info {
+	display: block;
+	position: relative;
+	.info {
+		display: block;
+		float: left;
+		font-size: .875em;
+		min-height: 18em;
+		margin: 0 5%;
+		overflow: hidden;
+		padding: 2em 1em;
+		position: relative;
+		text-align: center;
+		width: 90%;
+		h3 {
+			border: 3px solid $green;
+			color: $green;
+			font-size: .975em;
+			font-weight: 300;
+			letter-spacing: 2px;
+			margin: 0 7.5% 2em;
+			padding: .5em;
+			text-align: center;
+			text-transform: uppercase;
+			width: 85%
+		}
+		p {
+			font-family: $secondfont;
+			line-height: 1.5em;
+			margin: 2em 10%;
+			width: 80%;
+		}
+		&:before {
+			border-right: 28em solid $darkyellow;
+			border-top: 18em solid transparent;
+			content: "";
+			height: 0;
+			right: 5%;
+			position: absolute;
+			top: 0;
+			width: 0;
+			z-index: -1;
+		}
+		&:after {
+			border-top: 18em solid $lightyellow;
+			border-right: 28em solid transparent;
+			content: "";
+			height: 0;
+			position: absolute;
+			right: 5%;
+			top: 0;
+			width: 0;
+			z-index: -1;
+		}
+	}
+}
+
+
+/*********************
+POST & CONTENT STYLES
+*********************/
+
+.post-content {
+	text-align: center;
+	border-top: 2px $grey solid;
+	margin: 0 0 40px;
+	.post-title {
+		padding: 10px 30px;
+		margin: 0;
+		background: $gold;
+		color: $darkgrey;
+		display: inline-block;
+		font-weight: 400;
+		font-size: .9em;
+		position: relative;
+		top: -20px;
+	}
+	.post-comments {
+		color: $green;
+		margin: 0 0 20px 0;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	p {
+		text-align: left;
+		font-size: .8em;
+		font-weight: 400;
+		line-height: 2em;
+	}
+	.text-link-frame {
+		font-size: .9em;
+		margin: 20px 0 0;
+		padding-right: 20px;
+		float: left;
+	}
+}
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+
+/******************************************************************
+COMMENT STYLES
+******************************************************************/
+
+
+/******************************************************************
+COMMENT FORM STYLES
+******************************************************************/
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+/*********************
+FOOTER STYLES
+*********************/
+
+.site-footer {
+	background: $grey;
+	margin: 3.5em 0 0;
+	padding: 3em 0;
+	position: relative;
+	.border {
+		background: url('../images/footer-bg.png') repeat-x top;
+		height: 10px;
+		position: absolute;
+		top: -10px;
+		width: 100%;
+	}
+	p {
+		border: 1px solid $pink;
+		margin: 0;
+		padding: .75em 0;
+		text-align: center;
+		text-transform: uppercase;
+		width: 100%;
+		a {
+			color: $pink;
+			&:hover {
+				color: $link-hover;
+			}
+		}
+		&:first-of-type {
+			background: $pink;
+			color: $white;
+		}
+		&:nth-of-type(2) {
+			background: transparent;
+			color: $pink;
+		}
+	}
+	ul.social-icons {
+		margin: 2em 0 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			a {
+				color: #7A9292;
+				text-decoration: none;	
+			}
+		}
+	}
+	.wave {
+		display: block;
+		margin: 2em auto;
+	}
+}

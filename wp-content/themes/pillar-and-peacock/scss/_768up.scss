@@ -1,0 +1,110 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 768px;
+}
+
+/*********************
+HEADER SYTLES
+*********************/
+
+.header {}
+
+	#logo {}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.main-menu {
+	ul#menu-main-menu li {
+		&:nth-of-type(1n) {
+			width: auto;
+		}
+		&:first-of-type, &:nth-of-type(2) {
+			border-bottom: none;
+		}
+		a {
+		padding: 12px 20px;
+		border-left: 2px solid $green;
+		font-size: 15px;
+		letter-spacing: .3em;
+		}
+		&:last-child a{
+			padding-right: 1.534em;
+		}
+		&:nth-of-type(3) a {
+			border-left: 2px solid $green;
+		}
+	}
+	ul.social-icons {
+		li a {
+			padding: 12px 12px;
+		}
+		li:last-child a {
+			padding-left: 12px;
+		}
+	}
+}
+
+
+/*********************
+Pages
+*********************/
+
+.fpo .fpo-left, .fpo .fpo-right {
+	width: 50%;
+	h3 {
+		width: 50%;
+	}
+	p {
+		min-height: 24em;
+	}
+}	
+
+.about-info {
+	.info {
+		min-height: 22em;
+		margin: 0 2.75%;
+		width: 27.5%;
+		&:before {
+			border-right: 23.5em solid $darkyellow;
+			border-top: 20em solid transparent;
+			right: 0;
+		}
+		&:after {
+			border-top: 23.5em solid $lightyellow;
+			border-right: 20em solid transparent;
+			right: 0;
+		}
+	}
+}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+

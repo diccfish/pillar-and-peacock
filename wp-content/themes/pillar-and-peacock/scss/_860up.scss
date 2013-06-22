@@ -1,0 +1,50 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop. 
+
+******************************************************************/
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	width: 860px;
+}	
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.main-menu {
+	ul#menu-main-menu li {
+		width: auto;
+		a {
+			padding: 12px 29px;
+		}
+		&:last-child a{
+			padding-right: 2.25em;
+		}
+	}
+	ul.social-icons {
+		li a {
+			padding: 12px 15px;
+		}
+		li:last-child a {
+			padding-left: 17px;
+		}
+	}
+
+}
+
+/*********************
+Pages
+*********************/
+.fpo .fpo-left p, .fpo .fpo-right p {
+	min-height: 20em;
+}
