@@ -63,3 +63,20 @@ Pages
 		height: auto;
 	}
 }		
+
+.image-tiles {
+	.post {
+		&:nth-of-type(4n+1) {
+			width: 327px;
+		}
+		&:nth-of-type(4n+2) {
+			width: 140px;
+		}
+		&:nth-of-type(4n+3) {
+			width: 140px;
+		}
+		&:nth-of-type(4n+4) {
+			width: 327px;
+		}
+	}
+}

@@ -48,3 +48,20 @@ Pages
 .fpo .fpo-left p, .fpo .fpo-right p {
 	min-height: 20em;
 }
+
+.image-tiles {
+	.post {
+		&:nth-of-type(4n+1) {
+			width: 590px;
+		}
+		&:nth-of-type(4n+2) {
+			width: 256px;
+		}
+		&:nth-of-type(4n+3) {
+			width: 256px;
+		}
+		&:nth-of-type(4n+4) {
+			width: 590px;
+		}
+	}
+}

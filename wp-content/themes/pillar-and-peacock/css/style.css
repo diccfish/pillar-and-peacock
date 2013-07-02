@@ -1904,31 +1904,25 @@ PAGE & CONTENT STYLES
 
 .image-tiles {
   clear: both; }
-  .image-tiles .row img {
-    display: inline-block;
-    position: relative;
-    max-height: 25em; }
-  .image-tiles .row:nth-of-type(2n+1) img:nth-of-type(1) {
-    width: 68.75%; }
-  .image-tiles .row:nth-of-type(2n+1) img:nth-of-type(2) {
-    width: 30.25%; }
-  .image-tiles .row:nth-of-type(2n+2) img:nth-of-type(1) {
-    width: 30.25%; }
-  .image-tiles .row:nth-of-type(2n+2) img:nth-of-type(2) {
-    width: 68.75%; }
   .image-tiles .post {
     display: inline-block;
+    overflow: hidden;
     position: relative; }
     .image-tiles .post img {
-      width: 100%; }
+      height: 100%;
+      width: auto; }
     .image-tiles .post:nth-of-type(4n+1) {
-      width: 68.75%; }
+      margin: 0 10px 10px 0;
+      width: 68%; }
     .image-tiles .post:nth-of-type(4n+2) {
-      width: 30.25%; }
+      margin: 0 0 10px 0;
+      width: 28%; }
     .image-tiles .post:nth-of-type(4n+3) {
-      width: 30.25%; }
+      margin: 0 0 10px 0;
+      width: 68%; }
     .image-tiles .post:nth-of-type(4n+4) {
-      width: 68.75%; }
+      margin: 0 0 10px 10px;
+      width: 28%; }
     .image-tiles .post .text-link-block {
       bottom: 1em;
       border: 2px solid #fff;
@@ -2190,7 +2184,16 @@ tweeners.
   Pages
   *********************/
   .fpo .fpo-left #virginia, .fpo .fpo-left #tennessee, .fpo .fpo-right #virginia, .fpo .fpo-right #tennessee {
-    height: auto; } }
+    height: auto; }
+
+  .image-tiles .post:nth-of-type(4n+1) {
+    width: 327px; }
+  .image-tiles .post:nth-of-type(4n+2) {
+    width: 140px; }
+  .image-tiles .post:nth-of-type(4n+3) {
+    width: 140px; }
+  .image-tiles .post:nth-of-type(4n+4) {
+    width: 327px; } }
 /*
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -2348,6 +2351,15 @@ you can add resource intensive styles.
       border-right: 20em solid transparent;
       right: 0; }
 
+  .image-tiles .post:nth-of-type(4n+1) {
+    width: 530px; }
+  .image-tiles .post:nth-of-type(4n+2) {
+    width: 224px; }
+  .image-tiles .post:nth-of-type(4n+3) {
+    width: 224px; }
+  .image-tiles .post:nth-of-type(4n+4) {
+    width: 530px; }
+
   /*********************
   FOOTER STYLES
   *********************/ }
@@ -2392,7 +2404,16 @@ you can add resource intensive styles.
   Pages
   *********************/
   .fpo .fpo-left p, .fpo .fpo-right p {
-    min-height: 20em; } }
+    min-height: 20em; }
+
+  .image-tiles .post:nth-of-type(4n+1) {
+    width: 590px; }
+  .image-tiles .post:nth-of-type(4n+2) {
+    width: 256px; }
+  .image-tiles .post:nth-of-type(4n+3) {
+    width: 256px; }
+  .image-tiles .post:nth-of-type(4n+4) {
+    width: 590px; } }
 /*
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with

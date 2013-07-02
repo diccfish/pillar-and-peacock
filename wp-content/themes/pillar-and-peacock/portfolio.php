@@ -12,15 +12,12 @@ get_header(); ?>
 				<?php
 						$args = array( 'post_type' => 'portfolio_posts', 'posts_per_page' => 10 );
 						$loop = new WP_Query( $args );
-						while ( $loop->have_posts() ) : $loop->the_post();
-							echo '<article class="post"><article class="text-link-block">';
-							the_title();
-							echo '</article>';
-							the_content();
-							the_post_thumbnail( 'featured-thumb' );
-							echo '</article>';
-						endwhile;
-					?>
+						while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<article class="post">
+								<a href="<?php ?>" rel="lightbox" class="text-link-block"><?php the_title(); ?></a>
+								<?php the_post_thumbnail( 'featured-thumb' ); ?>
+							</article>
+						<?php endwhile; ?>
 			</section>
 			</section>		
 
