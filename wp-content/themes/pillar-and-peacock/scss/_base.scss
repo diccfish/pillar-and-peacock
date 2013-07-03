@@ -321,6 +321,7 @@ PAGE & CONTENT STYLES
 	clear: both;
 	.post {
 		display: inline-block;
+		max-height: 400px;
 		overflow: hidden;
 		position: relative;
 		img {
@@ -328,36 +329,72 @@ PAGE & CONTENT STYLES
 			width: auto;
 		}
 		&:nth-of-type(4n+1) {
-			margin: 0 10px 10px 0;
-			width: 68%;
+			margin: 0 10px 3px 0;
+			width: 66.5%;
 		}
 		&:nth-of-type(4n+2) {
-			margin: 0 0 10px 0;
-			width: 28%;
+			margin: 0;
+			width: 28.99%;
 		}
 		&:nth-of-type(4n+3) {
-			margin: 0 0 10px 0;
-			width: 68%;
+			margin: 0;
+			width: 28.99%;
 		}
 		&:nth-of-type(4n+4) {
-			margin: 0 0 10px 10px;
-			width: 28%;
+			margin: 0 0 3px 10px;
+			width: 66.5%;
 		}
 		.text-link-block {
-			bottom: 1em;
+			bottom: 2em;
 			border: 2px solid #fff;
 			color: #fff;
-			left: 25%;
+			cursor: pointer;
+			left: 5%;
 			position: absolute;
 			padding: 1em;
-			right: 25%;
 			text-align: center;
-			width: 50%;
+			width: 90%;
 			z-index: 999;
 			&:hover {
 				background: #fff;
 				color: $green;
 			}
+		}
+		.rollover {
+			cursor: pointer;
+			display: block;
+			height: 50px;
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+			top: -100px;
+			width: 200px;
+			img {
+				height: 100px;
+				position: relative;
+				top: 0;
+				width: 100%;
+				$transition: (all 1s ease);
+				&:hover {
+					top: -50px;
+				}
+			}
+		}
+	}
+	.gallery {
+		.gallery-item {
+			display: none;
+			width: 100% !important;
+			 img {
+				border: none !important;
+				width: 100%;
+			}
+			.gallery-caption {
+				display: none;
+			}
+		}
+		.gallery-item:first-of-type {
+			display: block;
 		}
 	}
 }

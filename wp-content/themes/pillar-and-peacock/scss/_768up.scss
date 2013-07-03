@@ -106,7 +106,7 @@ Pages
 .image-tiles {
 	.post {
 		&:nth-of-type(4n+1) {
-			width: 530px;
+			width: 518px;
 		}
 		&:nth-of-type(4n+2) {
 			width: 224px;
@@ -115,7 +115,12 @@ Pages
 			width: 224px;
 		}
 		&:nth-of-type(4n+4) {
-			width: 530px;
+			width: 518px;
+		}
+		.text-link-block, .gallery-caption {
+			left: 25%;
+			right: 25%;
+			width: 50%;
 		}
 	}
 }

@@ -42,6 +42,7 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'homepage-thumb', 220, 180, true ); //(cropped)
 }
 
+
 //---- Register Section Post Type ----//
 
 add_action( 'init', 'create_post_type' );
@@ -52,9 +53,11 @@ function create_post_type() {
 				'name' => __( 'Portfolios' ),
 				'singular_name' => __( 'Portfolio' )
 			),
-		'supports' => array('title', 'editor', 'thumbnail'),
 		'public' => true,
-		'has_archive' => true,
+		'show_ui' => true,
+		'publicly_queryable' => true,
+		'supports' => array('title', 'editor', 'thumbnail'),
+		'has_archive' => true
 		)
 	);
 }

@@ -10,14 +10,15 @@ get_header(); ?>
 			<section class="twelvecol first clearfix">
 			<section class="image-tiles">
 				<?php
-						$args = array( 'post_type' => 'portfolio_posts', 'posts_per_page' => 10 );
-						$loop = new WP_Query( $args );
-						while ( $loop->have_posts() ) : $loop->the_post(); ?>
-							<article class="post">
-								<a href="<?php ?>" rel="lightbox" class="text-link-block"><?php the_title(); ?></a>
-								<?php the_post_thumbnail( 'featured-thumb' ); ?>
-							</article>
-						<?php endwhile; ?>
+					$args = array( 'post_type' => 'portfolio_posts', 'posts_per_page' => 10 );
+					$loop = new WP_Query( $args );
+					 
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>	
+						<article class="post">
+							 <?php $gallery_shortcode = '[gallery id="' . intval(the_content()) . '"]'; ?>
+							<div class="rollover"><img src="<?php the_field('rolloverImage'); ?>"></div>
+						</article>				
+					<?php endwhile; ?>
 			</section>
 			</section>		
 
