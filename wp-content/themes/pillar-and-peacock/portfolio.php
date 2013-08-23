@@ -4,25 +4,28 @@
 
 get_header(); ?>
 	
-		<section class="content clearfix">
-		<section class="wrap clearfix">
+		<div class="content clearfix">
+		<div class="wrap clearfix">
 			
-			<section class="twelvecol first clearfix">
-			<section class="image-tiles">
+			<div class="twelvecol first clearfix">
+			<div id="container" class="js-masonry">
 				<?php
-					$args = array( 'post_type' => 'portfolio_posts', 'posts_per_page' => 10 );
+					$args = array( 'post_type' => 'portfolio_posts', 'posts_per_page' => -1 );
 					$loop = new WP_Query( $args );
-					 
-					while ( $loop->have_posts() ) : $loop->the_post(); ?>	
-						<article class="post">
-							 <?php $gallery_shortcode = '[gallery id="' . intval(the_content()) . '"]'; ?>
-							<div class="rollover"><img src="<?php the_field('rolloverImage'); ?>"></div>
+
+					while ( $loop->have_posts() ) : $loop->the_post(); 	
+					
+					$image = wp_get_attachment_image_src(get_post_thumbnail_id(), 'portfolio-img'); ?>
+					
+						<article class="post brick">
+							 <a href="<?php echo $image[0]; ?>" rel="lightbox"><?php the_post_thumbnail('portfolio-thumb'); ?>
+							<div class="label-box clear fix"><span><?php the_title();?></span></div></a>
 						</article>				
 					<?php endwhile; ?>
-			</section>
-			</section>		
+			</div>
+			</div>		
 
-		</section>
-	</section>
+		</div>
+	</div>
 
 <?php get_footer(); ?>

@@ -4,24 +4,38 @@
 
 get_header(); ?>
 	
-		<section class="content clearfix">
-		<section class="wrap clearfix">
+		<div class="content clearfix">
+		<div class="wrap wide clearfix">
 			
-			<section class="twelvecol first clearfix">	
-					<?php query_posts ('posts_per_page=2');
-						while ( have_posts() ) : the_post(); ?>
+			<aside class="twocol last floatbox">
+				<?php wp_list_categories('title_li=<h4>' . __('Categories') . '</h4>' ); ?>
+			</aside>	
+			<div class="tencol first clearfix">	
+					<?php
+
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+query_posts(array(
+	'paged'          => $paged,
+	'posts_per_page' => 5
+));
+
+if ( have_posts() ) : ?>
+
+<?php while ( have_posts() ) : the_post(); ?>
 							<article class="post-content clearfix">
-								<h3 class="post-title"><?php the_title(); ?></h3>
-								<section class="post-comments"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></section>
-								<section class="post-img"><?php the_post_thumbnail( 'featured-thumb' ); ?></section>
+								<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<div class="post-comments"><a href="<?php the_permalink(); ?>"><?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></a></div>
+								<div class="post-img"><?php the_post_thumbnail( 'featured-thumb' ); ?></div>
 								<?php the_excerpt(); ?>
 								<a href="<?php the_permalink(); ?>" class="text-link-frame">Read More</a>
 							</article>
 						<?php endwhile; ?>
-					<?php wp_reset_query(); ?>
-			</section>		
-
-		</section>
-	</section>
+							<nav class="post-nav"><?php posts_nav_link('', 'Newer', 'Older'); ?></nav>
+						<?php endif; ?>
+			</div>	
+		</div>
+		
+	</div>
 
 <?php get_footer(); ?>

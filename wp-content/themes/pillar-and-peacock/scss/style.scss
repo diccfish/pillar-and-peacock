@@ -40,7 +40,7 @@ This is for devices like the Galaxy Note or something that's
 larger than an iPhone but smaller than a tablet. Let's call them
 tweeners.
 */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px)  {
 
 	// styles in 481up.scss
 	@import "481up";
@@ -75,6 +75,27 @@ you can add resource intensive styles.
 	@import "860up";
 
 } // end of media query
+
+
+/*
+iPads (landscape)
+*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	@import "tabletl";
+}
+
+/*
+iPads (portrait)
+*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	@import "tabletp";
+}
 
 /*
 RETINA (2x RESOLUTION DEVICES)

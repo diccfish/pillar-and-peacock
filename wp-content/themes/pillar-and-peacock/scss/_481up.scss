@@ -20,7 +20,7 @@ upon your base.scss styles.
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-	width: 481px;
+	width: 460px;
 }
 
 
@@ -29,8 +29,12 @@ HEADER SYTLES
 *********************/
    
 .site-header {
+	h1 {
+		margin-top: 1em;
+	}
 	#tagline {
 		padding: .75em 1em;
+		letter-spacing: .3em;
 	}	
 }
 
@@ -48,9 +52,6 @@ NAVIGATION STYLES
 		clear: both;
 	}
 	li {
-		&#menu-item-13 a {
-			border: none;
-		}
 	}
 }
 
@@ -58,30 +59,120 @@ NAVIGATION STYLES
 Pages
 *********************/
 
-.fpo .fpo-left, .fpo .fpo-right {
+.bios {
+	.stack-wrap {
+		width: 481px;
+	}
+	h3 {
+		letter-spacing: 2px;
+		width: 50%;
+	}
+}
+
+.bios .bio-left, .bios .bio-right {
 	#virginia, #tennessee {
 		height: auto;
 	}
-}		
+}
 
-.image-tiles {
+.page-template-meet-php {
+	a.button-box {
+		width: 40%;
+	}
+}
+		
+
+.home-tiles {
+	width: 460px;
 	.post {
+		display: inline-block;
+		float: none;
+		img {
+			height: 100%;
+		}
 		&:nth-of-type(4n+1) {
-			width: 325px;
+			margin: 0 10px 10px 0;
+			width: 67%;
 		}
 		&:nth-of-type(4n+2) {
-			width: 140px;
+			margin: 0 0 10px 0;
+			width: 29.5%;
 		}
 		&:nth-of-type(4n+3) {
-			width: 140px;
+			margin: 0 0 10px 0;
+			width: 29.5%;
 		}
 		&:nth-of-type(4n+4) {
-			width: 325px;
+			margin: 0 0 10px 10px;
+			width: 67%;
 		}
-		.text-link-block, .gallery-caption {
-			left: 10%;
-			right: 0;
-			width: 80%;
+		.label-box {
+			bottom: 20px;
+			font-size: 1em;
+			margin: 0;
+			width: 100%;
+			span {
+				display: inline;
+			}
 		}
+	}
+}
+
+.label-box {
+	bottom: 30px;
+	font-size: .8em;
+	margin: 0 15%;
+	width: 70%;
+}
+
+.page-template-portfolio-php {
+	#container {
+    	width: 460px;
+	}
+	.brick {
+    	width: 228px;    	
+    	margin: 0;
+    	img {
+	    	width: 100%;
+    	}
+    }
+}
+
+.bios {
+	.stack-wrap {
+		width: 460px;
+	}
+}
+
+.contact {
+	article {
+		display: inline-block;
+		margin-bottom: 3em;
+		vertical-align: top;
+		width: 49%;
+		margin-right: 2%;
+		float: left;
+		&:nth-of-type(2) {
+			margin-right: 0;	
+		}
+		&:nth-of-type(3) {
+			margin: 0 5% 3em;
+			width: 90%;
+			p {
+				line-height: 1.5em;
+			}
+		}
+		img {
+			height: auto;
+		}
+	}
+}
+
+.wpcf7 {
+	textarea, input {
+		font-size: 1em;
+	}
+	input[type=submit] {
+		margin-top: 3.6125em;
 	}
 }

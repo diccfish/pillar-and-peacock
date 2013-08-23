@@ -29,11 +29,16 @@ LAYOUT & GRID STYLES
 
 .wrap {
 	margin: 0 auto;
-	width: 360px;
+	width: 300px;
 }	
 .box {
 	padding: 40px;
 	background: #FFF;
+}
+p {
+	-moz-hyphens: none;
+	hyphens: none;
+	-webkit-hyphens: none;
 }
 
 /*********************
@@ -121,16 +126,26 @@ FORM STYLES
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="tel"] {
 	box-shadow: none;
 	border: none;
 	padding: 10px 10px;
 	font-size: .85em;
 	font-family: $sans-serif;
 	font-weight: 300;
+	@include border-radius(0);
 	&:focus {
-		outline: none;
+		outline: 1px solid $gold;
 	}
+}
+
+textarea {
+	@include border-radius(0);
+	&:focus {
+		outline: 1px solid $gold;
+	}
+
 }
 
 input[type="submit"],
@@ -142,6 +157,7 @@ button[type="submit"] {
 	background: $green;
 	color: $white;
 	border: none;
+	@include border-radius(0);
 	@include transition(all 0.2s ease-in-out);
 	&:hover {
 		background: $white;
@@ -152,18 +168,43 @@ button[type="submit"] {
 /*********************
 GLOBAL STYLES
 *********************/
-.text-link-frame, .text-frame {
+a.text-link-frame, .text-frame {
 	background: url(../images/text-frame-bg.png) no-repeat left center;
 	padding: 10px 0 10px 50px;
+	margin-bottom: .75em;
 	font-size: 15px;
 	color: $gold;
 	letter-spacing: .3em;
-	border-bottom: 1px solid $gold;
+	border-bottom: 2px solid $gold;
 	text-transform: uppercase;	
+	float: left;
 }
-.text-link-frame {
+a.text-link-frame {
 	float: right;
 	margin: 1em 0;
+	&:hover {
+		color: $pink;
+		background-image: url(../images/text-frame-hover-bg.png);
+		border-bottom-color: $pink;
+	}
+}
+
+.button-box {
+	font-family: $sans-serif;
+	border: 3px solid $pink;
+	color: $pink;
+	font-weight: 300;
+	font-size: .875em;
+	letter-spacing: 2px;
+	margin: 0 auto;
+	padding: .7em;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	&:hover {
+		background: $pink;
+		color: $white;
+	}
 }
 
 
@@ -173,22 +214,24 @@ HEADER SYTLES
    
 .site-header {
 	h1 {
-		margin-top: 1.5em;
+		margin-top: .5em;
 		margin-bottom: 0;
+		height: 90px;
 		a {
+			display: block;
 			svg {
 				width: 100%;
-				height: 100px;
+				height: 80px;
 			}
 		}
 	}
 	#tagline {
 		font-size: 12px;
 		font-weight: 700;
-		letter-spacing: .3em;
+		letter-spacing: 0;
 		background: $green;
 		color: $white;
-		margin: 2.75em 0 8em;
+		margin: 2.75em 0 7em;
 		padding: .75em 0;
 		text-align: center;
 	}	
@@ -196,21 +239,8 @@ HEADER SYTLES
 
 /* Pattern Styles */
 
-.home header ul.social-icons{
+header ul.social-icons{
 	background: url(../images/pattern_victorian_border.png) 0 -16px repeat;
-}
-
-.page-template-blog-php header ul.social-icons {
-	background: url(../images/pattern_dots.png) repeat;
-}
-
-.page-template-portfolio-php header ul.social-icons{
-	background: url(../images/pattern_cross_hatch.png) 0 -23px repeat;
-}
-
-
-.page-id-8 header ul.social-icons{
-	background: url(../images/pattern_chevron.png) repeat;
 }
 
 
@@ -265,6 +295,7 @@ NAVIGATION STYLES
 	ul.social-icons {
 		float: left;
 		margin: 0;
+		width: 100%;
 		li {
 			display: inline-block;
 			float: right;
@@ -282,6 +313,41 @@ NAVIGATION STYLES
 	}
 }
 
+
+/*********************
+HOME PAGE STYLES
+*********************/
+.home-tiles {
+	clear: both;
+	margin: 0 auto;
+	width: 300px;
+	.post {
+		display: block;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		img {
+			float: left;
+			width: 100%;
+		}
+		&:nth-of-type(4n+1) {
+			margin: 0 auto 10px;
+			width: 300px;
+		}
+		&:nth-of-type(4n+2) {
+			margin: 0 5px 10px 0;
+			width: 145px;
+		}
+		&:nth-of-type(4n+3) {
+			margin: 0 0 10px 5px;
+			width: 145px;
+		}
+		&:nth-of-type(4n+4) {
+			margin: 0 auto 10px;
+			width: 300px;
+		}
+	}
+}
 
 /*********************
 PAGE & CONTENT STYLES
@@ -305,232 +371,216 @@ PAGE & CONTENT STYLES
 
 .page-intro {
 	color: $darkgrey;
-	font-family: $secondfont;
-	font-size: .9125em;
+	font-size: 1em;
 	font-weight: normal;
 	line-height: 2em;
-	margin: 0 10% 3em;
+	margin: 0 0 3em;
 	text-align: center;
-	width: 80%;
 }
 .extra-space {
 	margin: 3em 10%;
 }
 
-.image-tiles {
-	clear: both;
-	.post {
-		display: inline-block;
-		max-height: 400px;
-		overflow: hidden;
-		position: relative;
-		img {
-			height: 100%;
-			width: auto;
-		}
-		&:nth-of-type(4n+1) {
-			margin: 0 10px 3px 0;
-			width: 66.5%;
-		}
-		&:nth-of-type(4n+2) {
-			margin: 0;
-			width: 28.99%;
-		}
-		&:nth-of-type(4n+3) {
-			margin: 0;
-			width: 28.99%;
-		}
-		&:nth-of-type(4n+4) {
-			margin: 0 0 3px 10px;
-			width: 66.5%;
-		}
-		.text-link-block {
-			bottom: 2em;
-			border: 2px solid #fff;
-			color: #fff;
-			cursor: pointer;
-			left: 5%;
-			position: absolute;
-			padding: 1em;
-			text-align: center;
-			width: 90%;
-			z-index: 999;
-			&:hover {
-				background: #fff;
-				color: $green;
-			}
-		}
-		.rollover {
-			cursor: pointer;
-			display: block;
-			height: 50px;
-			margin: 0 auto;
-			position: relative;
-			overflow: hidden;
-			top: -100px;
-			width: 200px;
-			img {
-				height: 100px;
-				position: relative;
-				top: 0;
-				width: 100%;
-				$transition: (all 1s ease);
-				&:hover {
-					top: -50px;
-				}
-			}
-		}
+.label-box {
+	bottom: 10px;
+	color: $white;		
+	font-size: .75em;
+	margin: 0 10%;
+	position: absolute;
+	text-align: center;
+	z-index: 50;
+	width: 80%;
+	span {
+		border: solid 2px $white;
+		display: block;
+		padding: .5em;
 	}
-	.gallery {
-		.gallery-item {
-			display: none;
-			width: 100% !important;
-			 img {
-				border: none !important;
-				width: 100%;
-			}
-			.gallery-caption {
-				display: none;
-			}
-		}
-		.gallery-item:first-of-type {
-			display: block;
-		}
+}
+
+/* Masonry Layout */
+
+.page-template-portfolio-php {
+	#container {
+    	width: 300px; // width of the entire container for the wall
+	}
+	.brick {
+    	width: 300px;    	
+    	margin: 0;
+    	opacity: 0;
+    	@include transition(opacity .8s ease-in-out);
+    	&.masonry-brick {
+	    opacity: 1;
+    	@include transition(opacity .8s ease-in-out);
+    	}
+    	&:nth-child(2n+1) {
+    		margin-right: 2px;
+    	}
+    	&:nth-child(2n+2) {
+    		margin-left: 2px;
+    	}
+    	img {
+	    	width: 300px;
+	    	height: auto;
+	    	@include transition(opacity 0.2s ease-in-out)
+    	}
+    	a {
+    		height: 100%;
+    		position: relative;
+    		float: left;
+    		&:hover img {
+    			opacity: .8;
+    		}
+    	}
+    	
+	}
+}
+
+/* Lightbox Style Overrides */
+
+#lightbox {
+	margin: 20px 0;
+	#hoverNav {
+		display: none !important;
+	}
+	p#controls {
+		display: none !important;
+	}
+	#caption {
+		display: block;
+		margin: 0 0 10px;
 	}
 }
 
 .page-image {
-	margin: 5em 7% 6em;
+	margin: 0 0 6em;
 	padding: 0 1em;
-	width: 86%;
-	border-top: 1px solid $gold;
-	border-bottom: 1px solid $gold;
+	width: 100%;
+	border-top: 2px solid $gold;
+	border-bottom: 2px solid $gold;
 	img {
 		width: 94%;
-		padding: 1em 1.1em;
-		border-right: 1px solid $gold;
-		border-left: 1px solid $gold;
+		padding: 1.2em 1em;
+		border-right: 2px solid $gold;
+		border-left: 2px solid $gold;
 		display: block;
 		margin: 0 3%;
 	}
 }
 
-.fpo {	
+.bios {	
 	position: relative;
-	.fpo-left, .fpo-right {
-		color: $reallydarkgrey;
-		display: inline-block;
-		font-family: $secondfont;
-		font-size: .875em;
-		line-height: 1.5em;
-		padding: 3em 12.5%;
-		position: relative;
+	padding: 4.5em 0;
+	text-align: center;
+	.wrap {
 		width: 100%;
-		.silhouette {
-			margin: 0 5%;
-			width: 90%;
-		}
-		h3 {
-			border: 3px solid rgba(216,50,103,0.95);
-			color: rgba(216,50,103,.95);
-			float: left;
-			font-weight: 300;
-			letter-spacing: 2px;
-			margin: 0;
-			padding: 1em;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			top: 8em;
-			width: 80%;
-		}
+		
+	}
+	.bio-left, .bio-right {
+		color: $reallydarkgrey;
+		font-size: .875em;
+		line-height: 1.75em;
 		p {
-			margin: 3em 0 4em;
+			-moz-hyphens: none;
+			hyphens: none;
+			-webkit-hyphens: none;
+			margin: 2em 0 2em;
+			text-align: left;
 		}
 	}
-	.fpo-left {
-		background: $darkyellow;
+	.bio-left {
+		background-color: $darkyellow;
 	}
-	.fpo-right {
-		background: $lightyellow;
-		margin-left: -4px;
+	.bio-right {
+		background-color: $lightyellow;	
 	}
+	.stack-wrap {
+		width: 300px;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 5em;
+	}
+	
 	#tennessee, #virginia {
 		height: 6.5em;
 		margin: 0 10% 2em;
 		width: 80%;
 	}
+	
+	#tennessee {
+		margin: 3em 0 0;
+	}
+	
+	h3 {
+		border: 3px solid $pink;
+		color: $pink;
+		font-weight: 300;
+		letter-spacing: 0;
+		margin: 0;
+		padding: .7em;
+		text-align: center;
+		text-transform: uppercase;
+		top: 10em;
+		position: absolute;
+		width: 60%;
+		left: 20%;
+	}
 }
 
-.about-info {
-	display: block;
-	position: relative;
-	.info {
+.process-lead p {
+	margin: 6em 0 0;
+	line-height: 2em;
+	text-align: center;
+}
+
+.page-template-meet-php {
+	a.button-box {
+		margin: 5em auto;
 		display: block;
-		float: left;
-		font-size: .875em;
-		min-height: 18em;
-		margin: 0 5%;
-		overflow: hidden;
-		padding: 2em 1em;
-		position: relative;
-		text-align: center;
-		width: 90%;
-		h3 {
-			border: 3px solid $green;
-			color: $green;
-			font-size: .975em;
-			font-weight: 300;
-			letter-spacing: 2px;
-			margin: 0 7.5% 2em;
-			padding: .5em;
-			text-align: center;
-			text-transform: uppercase;
-			width: 85%
-		}
-		p {
-			font-family: $secondfont;
-			line-height: 1.5em;
-			margin: 2em 10%;
-			width: 80%;
-		}
+		width: 70%;
+		color: $pink;
 		&:before {
-			border-right: 28em solid $darkyellow;
-			border-top: 18em solid transparent;
+			border-right: 8px solid transparent;
+			border-left: 8px solid transparent;
+			border-top: 8px solid $pink;
 			content: "";
-			height: 0;
-			right: 5%;
+			left: 50%;
+			margin: 0 auto 0 -8px;
 			position: absolute;
-			top: 0;
-			width: 0;
-			z-index: -1;
+			top: -3em;
 		}
-		&:after {
-			border-top: 18em solid $lightyellow;
-			border-right: 28em solid transparent;
-			content: "";
-			height: 0;
-			position: absolute;
-			right: 5%;
-			top: 0;
-			width: 0;
-			z-index: -1;
+		&:hover {
+			color: $white;
 		}
 	}
 }
 
 
 /*********************
-POST & CONTENT STYLES
+BLOG POST & CONTENT STYLES
 *********************/
+
+.page-template-blog-php .wrap.wide, .category .wrap.wide, .single .wrap.wide {
+	float: right;
+	.first {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+hr {
+	background: #ccc;
+	border: none;
+	height: 1px;
+	margin: 4em 0;
+}
 
 .post-content {
 	text-align: center;
 	border-top: 2px $grey solid;
-	margin: 0 0 40px;
+	margin: 0 0 140px;
 	.post-title {
 		padding: 10px 30px;
-		margin: 0;
+		margin: 0 0 2em;
 		background: $gold;
 		color: $darkgrey;
 		display: inline-block;
@@ -538,6 +588,12 @@ POST & CONTENT STYLES
 		font-size: .9em;
 		position: relative;
 		top: -20px;
+		a {
+			color: $darkgrey;
+			&:hover {
+				color: $white;
+			}
+		}
 	}
 	.post-comments {
 		color: $green;
@@ -561,23 +617,324 @@ POST & CONTENT STYLES
 	}
 }
 
+.post-nav {
+	text-align: center;
+	a {
+		font-family: $sans-serif;
+		border: 3px solid $pink;
+		color: $pink;
+		font-weight: 300;
+		font-size: .875em;
+		letter-spacing: 2px;
+		margin: 0 auto;
+		padding: .7em 4em;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		&:first-child:after {
+			content: "";
+			position: absolute;
+			left: 2.5em;
+			top: .95em;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			border-right: 9px solid $pink;
+		}
+		&:hover {
+			background: $pink;
+			color: $white;
+			&:first-child:after {
+				content: "";
+				position: absolute;
+				left: 2.5em;
+				top: .95em;
+				border-top: 6px solid transparent;
+				border-bottom: 6px solid transparent;
+				border-right: 9px solid $white;
+			}
+		}
+	}
+}
+
+.post-prev-nav, .post-next-nav {
+	text-align: center;
+	width: 40%;
+	a {
+		font-family: $sans-serif;
+		border: 2px solid $pink;
+		color: $pink;
+		display: block;
+		font-weight: 300;
+		font-size: .75em;
+		letter-spacing: 1px;
+		padding: .7em 2em;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		&:hover {
+			background: $pink;
+			color: $white;
+		}
+	}
+}
+.post-prev-nav {
+	float: left;
+}
+.post-next-nav {
+	float: right;
+}
+
 /******************************************************************
-PAGE NAVI STYLES
+   Comments 
 ******************************************************************/
 
+.commentmetadata {
+	display: none;
+}
+
+.comment {
+	background: #E6E7E8;
+	color: $lightgrey;
+	font-size: 13px;
+	padding: 20px 30px;
+	p {
+		font-size: 13px;
+		line-height: 23px;
+		margin-bottom: 0;
+	}
+}
+
+.comment-author {
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: left;
+	cite {
+		color: $darkgrey;
+		font-size: 12px;
+		font-style: normal;
+		text-transform: uppercase;
+	}
+	.says {
+		display: none;
+	}
+}
+
+.comment-notes {
+	display: none;
+}
+
+.comment-respond {
+	margin: 4em 0;
+}
+
+#reply-title {
+	font-size: .9em;
+	font-weight: 400;
+	text-align: left;
+}
+
+.comment-form {
+	p {
+		margin: 2em 0;
+		width: 100%;
+		input, textarea {
+			background: #E6E7E8;
+			border: none;
+			font-size: .9em;
+			padding: 20px;
+		}
+		input {
+			width: 100%;
+		}
+		textarea {
+			height: 14em;
+			width: 100%;
+		}
+	}
+	input[type=submit] {
+		font-family: $sans-serif;
+		background: #fff;
+		border: 3px solid $pink;
+		color: $pink;
+		float: left;
+		font-weight: 300;
+		font-size: .875em;
+		letter-spacing: 2px;
+		padding: .7em 4em;
+		position: relative;
+		&:hover {
+			background: $pink;
+			color: $white;
+		}
+	}
+}
+
 
 /******************************************************************
-COMMENT STYLES
+PROCESS STYLES
 ******************************************************************/
+
+.process {
+	display: block;
+	position: relative;
+	width: 100%;
+	> div {
+		display: block;
+		width: 100%;
+		
+		&.step-number {
+			border-bottom: 2px solid $pink;
+			text-align: center;
+			width: 100%;
+			height: 3em;
+			span {
+				border: 2px solid $pink;
+				color: $pink;
+				margin: 0 auto 2em;
+				padding: .5em .75em;
+				position: relative;
+			}
+		}
+		
+		&.step-titles {
+			width: 100%;
+			div {
+				color: $lightgrey;
+				margin: 1em auto;
+				position: relative;
+				text-align: center;
+				text-transform: uppercase;
+				&.mobile-step-details {
+					text-transform: none;
+					text-align: left;
+					border-bottom: 2px solid $pink;
+					padding-bottom: 1em;
+					font-size: .85em;
+				}
+				
+			}
+		}
+		
+		&.step-details {
+			display: none;
+		}
+		
+	}
+	img {
+		margin: 3em auto 4em;
+	}
+}
 
 
 /******************************************************************
-COMMENT FORM STYLES
+CONTACT STYLES
 ******************************************************************/
+
+.contact {
+	article {
+		display: block;
+		margin: 0 auto 4em auto;
+		vertical-align: top;
+		width: 250px;
+		&:nth-of-type(3) {
+			width: 90%;
+			p {
+				line-height: 1.5em;
+			}
+		}
+	}
+}
+
+.wpcf7 {
+	textarea, input {
+		background: $lightyellow;
+		border: none;
+		color: $darkgrey;
+		font-family: $sans-serif;
+		font-size: .75em;
+		font-weight: 300;
+		margin: 1em 1.25% 0;
+		padding: 1.75em;
+	}
+	textarea {
+		float: left;
+		height: 300px;
+		width: 50%;
+	}
+	input {
+		float: right;
+		width: 45%;
+		&[type=submit] {
+			border: 3px solid $darkyellow;
+			color: $darkyellow;
+			font-size: 1.25em;
+			letter-spacing: 2px;
+			margin-top: 6.575em;
+			padding: .5em 0;
+			&:hover {
+				background: $darkyellow;
+				color: #fff;
+			}
+		}
+	}
+}
+::-webkit-input-placeholder { color: $darkgrey; }
+input:-moz-placeholder { color: $darkgrey; }
+::-moz-placeholder { color: $darkgrey; }
+input:-ms-input-placeholder { color: $darkgrey; }
+
+div.wpcf7 img.ajax-loader {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	padding: 1em 0;
+	width: 16px;	
+}
+h3.contact {
+	font-weight: 300;
+	margin-left: 1.25%;
+	text-align: left;
+	text-transform: none;
+}
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
+
+.floatbox {
+	li.categories {
+		list-style: none;
+		text-transform: uppercase;
+		border: 2px solid $grey;
+		margin-bottom: 6em;
+		h4 {
+			color: $white;
+			background: $pink;
+			padding: 10px 15px;
+			margin-top: 0;
+			margin-bottom: 0;
+			display: block;
+			text-align: center;
+			font-weight: 400;
+			font-size: .9em;
+		}
+		ul {
+			padding: 0 0.7em;
+			text-align: center;
+			li {
+				margin: 1em 0;
+				font-size: .7em;
+				line-height: .8em;
+				a {
+					color: $darkgrey;
+					&:hover {
+						color: $pink;
+					}
+				}
+			}
+		}
+	}
+}
 
 /*********************
 FOOTER STYLES
@@ -585,36 +942,36 @@ FOOTER STYLES
 
 .site-footer {
 	background: $grey;
+	font-size: .875em;
 	margin: 3.5em 0 0;
 	padding: 3em 0;
 	position: relative;
 	.border {
-		background: url('../images/footer-bg.png') repeat-x top;
 		height: 10px;
 		position: absolute;
 		top: -10px;
 		width: 100%;
 	}
 	p {
-		border: 1px solid $pink;
+		border: 1px solid $green;
 		margin: 0;
 		padding: .75em 0;
 		text-align: center;
 		text-transform: uppercase;
 		width: 100%;
 		a {
-			color: $pink;
+			color: $green;
 			&:hover {
 				color: $link-hover;
 			}
 		}
 		&:first-of-type {
-			background: $pink;
+			background: $green;
 			color: $white;
 		}
 		&:nth-of-type(2) {
 			background: transparent;
-			color: $pink;
+			color: $green;
 		}
 	}
 	ul.social-icons {
@@ -623,8 +980,11 @@ FOOTER STYLES
 		li {
 			display: inline-block;
 			a {
-				color: #7A9292;
-				text-decoration: none;	
+				color: #808690;
+				text-decoration: none;
+				&:hover {
+					color: $green;
+				}	
 			}
 		}
 	}

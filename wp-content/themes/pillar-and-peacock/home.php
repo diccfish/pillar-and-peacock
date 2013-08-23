@@ -11,18 +11,22 @@ get_header();
 			<section class="twelvecol first clearfix">
 				<h2 class="text-frame">Featured Spaces</h2>
 
-				<section class="image-tiles">
+				<section class="home-tiles">
 					<article class="post">
 						<img src="<?php bloginfo('template_url'); ?>/images/bed_horz.jpg">
+						<div class="label-box clear fix"><span>Fairhope AL</span></div></a>
 					</article>
 					<article class="post">
 						<img src="<?php bloginfo('template_url'); ?>/images/shelves_vert.png">
+						<div class="label-box clear fix"><span>Irvington VA</span></div></a>
 					</article>
 					<article class="post">
 						<img src="<?php bloginfo('template_url'); ?>/images/chair_vert.png">
+						<div class="label-box clear fix"><span>Fairhope AL</span></div></a>
 					</article>
 					<article class="post">
 						<img src="<?php bloginfo('template_url'); ?>/images/chair_horz.jpg">
+						<div class="label-box clear fix"><span>Irvington VA</span></div></a>
 					</article>
 				</section>
 			

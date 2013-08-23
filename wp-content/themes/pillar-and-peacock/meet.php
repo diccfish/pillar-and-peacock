@@ -9,11 +9,11 @@ get_header(); ?>
 			
 			<section class="twelvecol first clearfix">	
 				<article class="page-intro">
-					Pillar & Peacock is a fabulous regional interior design firm focused on creating clean, classic, effortlessly chic spaces...where structure and beauty merge. Founded by Adrianne Bugg and Brandeis Short, Pillar & Peacock works to serve clients in Tennessee, Virginia, New York, and throughout the Southeast. We enjoy combining traditional and contemporary styles to create clean, crisp and elegantly unique spaces. 
+					At Pillar & Peacock, we enjoy working in a variety of styles to create elegantly unique spaces. Partnering with our clients to integrate their thoughts, ideas, needs, and wants with our expertise to design something beautiful and true to them is why we are in this business. We are passionate about providing a well appointed space that reflects who you are and tells your story. We not only serve clients, we partner with them.
 				</article>
 				
 				<article class="page-image">
-					<img src="<?php bloginfo('template_url'); ?>/images/About_Top_AB.jpg" alt="About Pillar &amp; Peacock: Brandeis and Adrianne">
+					<img src="<?php bloginfo('template_url'); ?>/images/about-top.jpg" alt="About Pillar &amp; Peacock: Brandeis and Adrianne">
 				</article>
 			</section>		
 
@@ -21,48 +21,41 @@ get_header(); ?>
 	</section>
 </section>
 
-<section class="fpo">
-	<section class="fpo-left">
-		<object data="<?php bloginfo('template_url'); ?>/images/silhouette-left.svg" type="image/svg+xml" class="silhouette"></object>
-		<h3>Brandeis Short</h3>
-		<p>A third generation Seattleite and 15-year veteran of creative studios large and small, Alisa’s account and project management experience includes Starbucks, PepsiCo, Microsoft, and more. She received her degree amid the wheat fields and wineries of Walla Walla at Whitman College. Aside from being a go-to for restaurant recommendations and magazine sharing, Alisa firmly believes that Hallmark should popularize an Aunt’s Day.</p>
-		<object data="<?php bloginfo('template_url'); ?>/images/tennessee.svg" type="image/svg+xml" id="tennessee" ></object>
-	</section>
-	
-	<section class="fpo-right">
-		<object data="<?php bloginfo('template_url'); ?>/images/silhouette.svg" type="image/svg+xml" class="silhouette"></object>
-		<h3>Adrianne Bugg</h3>
-		<p>Drew grew up in Stockton, California, winner of the “All-American City” award in 1999 and 2004 as well as Forbes “America’s Most Miserable City” in 2009 and 2011. He escaped to Seattle to attend Cornish College of the Arts, where he graduated with a degree in Visual Communication. He worked in advertising for a while but now has the free time to watch hockey and raise a little dog named Pickle.</p>
-		<object data="<?php bloginfo('template_url'); ?>/images/virginia.svg" type="image/svg+xml" id="virginia"></object>
+<section class="bios clearfix">
+	<section class="wrap">
+		<section class="bio-left sixcol first">
+			<div class="stack-wrap">
+				<object data="<?php bloginfo('template_url'); ?>/images/silhouette-left.svg" type="image/svg+xml" class="silhouette"></object>
+				<h3>Brandeis Short</h3>
+				<p>Authentic | Passionate | Dedicated | Connective | Visual<br /><br />
+				Everyone has a story to tell. When we are able to contribute to that story through design, my passion comes alive. My favorite part of what we do is the process of internalizing what our client has communicated to us and translating it into something tangibly beautiful, unique and true. It has to be right. It has to be authentic. It has to be you. <br /><br />What A says about B: Once a ballerina, always a red-head...simultaneously graceful and fiery.</p>
+				<div class="state">
+					<object data="<?php bloginfo('template_url'); ?>/images/tennessee.svg" type="image/svg+xml" id="tennessee" ></object>
+				</div>
+			</div>
+		</section>
+		
+		<section class="bio-right sixcol last">
+			<div class="stack-wrap">
+				<object data="<?php bloginfo('template_url'); ?>/images/silhouette.svg" type="image/svg+xml" class="silhouette"></object>
+				<h3>Adrianne Bugg</h3>
+				<p>Visual | Artistic | Driven | Zealous | Inspired<br /><br />
+				It makes me smile when I walk into a room in my house that is carefully designed and totally "me". It makes me even happier when we make our clients feel this way; that their space is unique to them, loving it so much that I know we've done what we were hired to do: partner with our client to look through the design lens and make the collective vision come to life. It's the fulfillment of my own dream that I get to help fulfill dreams of others. What B says about A: Bold enough to wear a pixie, old-school enough to only wear linen after Easter.</p>				
+				<div class="state">
+					<object data="<?php bloginfo('template_url'); ?>/images/virginia.svg" type="image/svg+xml" id="virginia"></object>
+				</div>
+			</div>
+		</section>
 	</section>
 </section>
 
 <section class="wrap clearfix">
-	<section class="twelvecol first clearfix">	
-		<article class="page-intro extra-space">
-			We work close with our clients. We hold your hand and all that great stuff. We take you through a tried and true possible and we skip down the road together.  We work close with our clients. We hold your hand and all that great stuff. We take you through a tried and true possible and we skip down the road together. 
-		</article>
+	<section class="twelvecol first clearfix process-lead">
+			<p>In the early days, Adrianne pursued a Finance degree at Tulane University in New Orleans. Adrianne cut her teeth in the business world while playing with art and design on the side. She brings the necessary skills to run a business while also having that innate sense of design you just can't teach. <br /><br />
+			Brandeis obtained her degree in Art History and Dance then decided to pursue interior design at Virginia Commonwealth University in Richmond, VA. After obtaining her Interior Design degree, Brandeis worked with 3North, an architecture, interior design firm. She also has that unteachable sense of design and adds a critical depth of technical experience to the table that makes every project seamless.<br /><br />
+			Together we have over 10 years of experience in the design field. We have worked on every kind of project: boutique hospitality such as Bedford Springs Resort and Grove Park Inn, to high-end residential design, to additions, renovations, and design from the ground up. Our individual experiences make us the perfect complement to each other and to your design project. We truly are "the perfect balance of form and function."</p>
 		
-		<article class="about-info">
-			<div class="info">
-				<h3>Discovery</h3>
-					<p>Meeting</p>
-					<p>Measuring, Drawings & Inspiration</p>
-					<p>Presentation of Drawings and Inspirational Palette </p>
-			</div>
-			<div class="info">
-				<h3>Detailing</h3>
-					<p>Selections & Drawings</p>
-					<p>Design Presentation</p>
-					<p>Selection Approval</p>
-			</div>
-			<div class="info">
-				<h3>Delivery</h3>
-					<p>Ordering & Purchasing</p>
-					<p>Delivery of Selections</p> 
-					<p>Installation & Completion</p>
-			</div>
-		</article>
+		<a href="/process" class="button-box">The Process</a>	
 	</section>	
 
 <?php get_footer(); ?>

@@ -1,146 +1,17 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8300",
+  "creatorBuild" : "8317",
   "files" : {
-    "\/scss\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_normalize.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/scss\/style.scss" : {
+    "\/js\/float-box.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/style.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/style.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/scss\/_768up.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_768up.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_768up.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/functions.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/functions.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/images\/pillar-and-peacock-logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pillar-and-peacock-logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pillar-and-peacock-logo.png",
-      "initialSize" : 8029,
-      "fileType" : 8192
-    },
-    "\/images\/pattern_dots@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_dots@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_dots@2x.png",
-      "initialSize" : 5130,
-      "fileType" : 8192
-    },
-    "\/images\/wave.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/wave.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/wave.png",
-      "initialSize" : 424,
-      "fileType" : 8192
-    },
-    "\/images\/footer-bg.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/footer-bg.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/footer-bg.png",
-      "initialSize" : 1145,
-      "fileType" : 8192
-    },
-    "\/css\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/style.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/text-frame-bg.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/text-frame-bg.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/text-frame-bg.png",
-      "initialSize" : 205,
-      "fileType" : 8192
-    },
-    "\/images\/pattern_victorian_border@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_victorian_border@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_victorian_border@2x.png",
-      "initialSize" : 14035,
-      "fileType" : 8192
-    },
-    "\/style.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/style.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/pattern_cross_hatch@2x.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_cross_hatch@2x.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_cross_hatch@2x.png",
-      "initialSize" : 4878,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/js\/float-box.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/float-box-ck.js",
+      "fileType" : 64
     },
     "\/images\/pattern_cross_hatch.png" : {
       "ignoreWasSetByUser" : 0,
@@ -153,39 +24,77 @@
       "initialSize" : 2084,
       "fileType" : 8192
     },
-    "\/scss\/_860up.scss" : {
+    "\/header.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/header.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/scss\/_tabletp.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_860up.scss",
+      "inputAbbreviatedPath" : "\/scss\/_tabletp.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_860up.css",
+      "outputAbbreviatedPath" : "\/css\/_tabletp.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/chair_horz.jpg" : {
+    "\/images\/nashville-flight@2x.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/chair_horz.jpg",
+      "inputAbbreviatedPath" : "\/images\/nashville-flight@2x.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/chair_horz.jpg",
-      "initialSize" : 100762,
+      "outputAbbreviatedPath" : "\/images\/nashville-flight@2x.jpg",
+      "initialSize" : 389303,
       "fileType" : 4096
     },
-    "\/images\/About_Top_AB.jpg" : {
+    "\/js\/modernizr.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/About_Top_AB.jpg",
+      "inputAbbreviatedPath" : "\/js\/modernizr.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/modernizr-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/nashville-flight.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/nashville-flight.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/About_Top_AB.jpg",
-      "initialSize" : 138845,
+      "outputAbbreviatedPath" : "\/images\/nashville-flight.jpg",
+      "initialSize" : 68405,
       "fileType" : 4096
+    },
+    "\/process.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/process.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/archive.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/archive.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/shelves_vert.png" : {
       "ignoreWasSetByUser" : 0,
@@ -209,91 +118,112 @@
       "initialSize" : 18028,
       "fileType" : 8192
     },
-    "\/images\/pattern_chevron.png" : {
+    "\/js\/masonry.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_chevron.png",
+      "inputAbbreviatedPath" : "\/js\/masonry.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/masonry.min-ck.js",
+      "fileType" : 64
+    },
+    "\/js\/scripts.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/scripts.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/scripts-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/wave.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/wave.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_chevron.png",
-      "initialSize" : 2769,
+      "outputAbbreviatedPath" : "\/images\/wave.png",
+      "initialSize" : 424,
       "fileType" : 8192
     },
-    "\/images\/pattern_chevron@2x.png" : {
+    "\/images\/pattern_dots@2x.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_chevron@2x.png",
+      "inputAbbreviatedPath" : "\/images\/pattern_dots@2x.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_chevron@2x.png",
-      "initialSize" : 5386,
+      "outputAbbreviatedPath" : "\/images\/pattern_dots@2x.png",
+      "initialSize" : 5130,
       "fileType" : 8192
     },
-    "\/images\/bed_horz.jpg" : {
+    "\/home.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/bed_horz.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/bed_horz.jpg",
-      "initialSize" : 111419,
-      "fileType" : 4096
-    },
-    "\/scss\/_mixins.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_mixins.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_mixins.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo.png",
-      "initialSize" : 8102,
-      "fileType" : 8192
-    },
-    "\/header.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/header.php",
+      "inputAbbreviatedPath" : "\/home.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/scss\/_2x.scss" : {
+    "\/images\/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/tumblr_mopqkkwK2M1st5lhmo1_1280.jpg",
+      "initialSize" : 315043,
+      "fileType" : 4096
+    },
+    "\/images\/footer-bg.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/footer-bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/footer-bg.png",
+      "initialSize" : 1145,
+      "fileType" : 8192
+    },
+    "\/scss\/_768up.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_2x.scss",
+      "inputAbbreviatedPath" : "\/scss\/_768up.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_2x.css",
+      "outputAbbreviatedPath" : "\/css\/_768up.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/images\/pattern_victorian_border@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pattern_victorian_border@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/pattern_victorian_border@2x.png",
+      "initialSize" : 14035,
+      "fileType" : 8192
+    },
+    "\/blog.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/blog.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/scss\/_481up.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -307,46 +237,103 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/pattern_dots.png" : {
+    "\/images\/virginia-flight.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/pattern_dots.png",
+      "inputAbbreviatedPath" : "\/images\/virginia-flight.jpg",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/pattern_dots.png",
-      "initialSize" : 10109,
-      "fileType" : 8192
+      "outputAbbreviatedPath" : "\/images\/virginia-flight.jpg",
+      "initialSize" : 68819,
+      "fileType" : 4096
     },
-    "\/scss\/_grid.scss" : {
+    "\/images\/Process-Top.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/Process-Top.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/Process-Top.jpg",
+      "initialSize" : 138845,
+      "fileType" : 4096
+    },
+    "\/single.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/single.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/jquery.isotope.min-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/_grid.scss",
+      "inputAbbreviatedPath" : "\/js\/jquery.isotope.min-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.isotope.min-ck-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/bed_horz.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/bed_horz.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/bed_horz.jpg",
+      "initialSize" : 111419,
+      "fileType" : 4096
+    },
+    "\/js\/modernizr-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/modernizr-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/modernizr-ck-ck.js",
+      "fileType" : 64
+    },
+    "\/scss\/_tabletl.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_tabletl.scss",
       "outputStyle" : 0,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_grid.css",
+      "outputAbbreviatedPath" : "\/css\/_tabletl.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/meet.php" : {
+    "\/images\/text-frame-bg.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/meet.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/images\/text-frame-bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/text-frame-bg.png",
+      "initialSize" : 205,
+      "fileType" : 8192
     },
-    "\/footer.php" : {
+    "\/images\/About_Top_AB.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/footer.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/images\/About_Top_AB.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/About_Top_AB.jpg",
+      "initialSize" : 138845,
+      "fileType" : 4096
     },
     "\/page.php" : {
       "ignoreWasSetByUser" : 0,
@@ -354,6 +341,81 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/page.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/images\/tumblr_mnh1uhYnog1st5lhmo1_1280.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/tumblr_mnh1uhYnog1st5lhmo1_1280.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/tumblr_mnh1uhYnog1st5lhmo1_1280.jpg",
+      "initialSize" : 220749,
+      "fileType" : 4096
+    },
+    "\/contact.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/contact.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/images\/chair_vert.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/chair_vert.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/chair_vert.png",
+      "initialSize" : 177536,
+      "fileType" : 8192
+    },
+    "\/scss\/_860up.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_860up.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_860up.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/scss\/_2x.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_2x.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_2x.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/text-frame-hover-bg.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/text-frame-hover-bg.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/text-frame-hover-bg.png",
+      "initialSize" : 1015,
+      "fileType" : 8192
+    },
+    "\/index.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
@@ -369,6 +431,166 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/images\/pattern_chevron@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pattern_chevron@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/pattern_chevron@2x.png",
+      "initialSize" : 5386,
+      "fileType" : 8192
+    },
+    "\/images\/pillar-and-peacock-logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pillar-and-peacock-logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/pillar-and-peacock-logo.png",
+      "initialSize" : 8029,
+      "fileType" : 8192
+    },
+    "\/images\/footer-bg@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/footer-bg@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/footer-bg@2x.png",
+      "initialSize" : 358,
+      "fileType" : 8192
+    },
+    "\/images\/virginia-flight@2x.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/virginia-flight@2x.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/virginia-flight@2x.jpg",
+      "initialSize" : 390540,
+      "fileType" : 4096
+    },
+    "\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/style.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/scss\/style.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/style.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/scss\/_grid.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_grid.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_grid.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/category.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/category.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/scss\/_mixins.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_mixins.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_mixins.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/us.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/us.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/us.jpg",
+      "initialSize" : 82969,
+      "fileType" : 4096
+    },
+    "\/images\/pattern_cross_hatch@2x.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pattern_cross_hatch@2x.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/pattern_cross_hatch@2x.png",
+      "initialSize" : 4878,
+      "fileType" : 8192
+    },
+    "\/images\/logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/logo.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/logo.png",
+      "initialSize" : 8102,
+      "fileType" : 8192
+    },
+    "\/portfolio.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/portfolio.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/jquery.isotope.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.isotope.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery.isotope.min-ck.js",
+      "fileType" : 64
+    },
+    "\/meet.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/meet.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/scss\/_base.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -381,25 +603,119 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/index.php" : {
+    "\/functions.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.php",
+      "inputAbbreviatedPath" : "\/functions.php",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/chair_vert.png" : {
+    "\/js\/float-box-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/float-box-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/float-box-ck-ck.js",
+      "fileType" : 64
+    },
+    "\/footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/chair_vert.png",
+      "inputAbbreviatedPath" : "\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/js\/scripts-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/scripts-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/scripts-ck-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/pattern_chevron.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pattern_chevron.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/chair_vert.png",
-      "initialSize" : 177536,
+      "outputAbbreviatedPath" : "\/images\/pattern_chevron.png",
+      "initialSize" : 2769,
       "fileType" : 8192
+    },
+    "\/css\/style.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/style.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
+    },
+    "\/images\/chair_horz.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/chair_horz.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/chair_horz.jpg",
+      "initialSize" : 100762,
+      "fileType" : 4096
+    },
+    "\/scss\/_normalize.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/_normalize.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_normalize.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/pattern_dots.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/pattern_dots.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/pattern_dots.png",
+      "initialSize" : 10109,
+      "fileType" : 8192
+    },
+    "\/images\/about-top.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/about-top.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/about-top.jpg",
+      "initialSize" : 94440,
+      "fileType" : 4096
+    },
+    "\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [
@@ -420,7 +736,10 @@
     "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
+    "lessIECompatibility" : 1,
     "genericWebpageFileExtensionsString" : "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+    "lessStrictUnits" : 0,
+    "lessStrictMath" : 0,
     "coffeeMinifyOutput" : 1,
     "javascriptOutputSuffix" : "-ck",
     "jadeOutputStyle" : 0,
@@ -569,6 +888,7 @@
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
     "kitAutoOutputPathReplace2" : "",
+    "lessRelativeURLS" : 0,
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0

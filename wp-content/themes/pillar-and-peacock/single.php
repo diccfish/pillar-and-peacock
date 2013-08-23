@@ -1,22 +1,32 @@
 <?php get_header(); ?>
 	
-	<section class="content clearfix">
-		<section class="wrap clearfix">
-
-			<section class="twelvecol first clearfix">
-				<section class="image-tiles">
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-						<article class="post">
-								<?php the_post_thumbnail( 'featured-thumb' ); ?>
-								<a href="" class="text-link-block" rel="lightbox"><?php the_title(); ?></a>
+	<div class="content clearfix">
+		<div class="wrap wide clearfix">
+			
+			<aside class="twocol last floatbox">
+				<?php wp_list_categories('title_li=<h4>' . __('Categories') . '</h4>' ); ?>
+			</aside>	
+			
+			<div class="tencol first clearfix">			
+				<?php while ( have_posts() ) : the_post(); ?>		
+						<article class="post-content clearfix">
+								<h3 class="post-title"><?php the_title(); ?></h3>
+								<div class="post-comments">
+									<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
+								</div>
+								<div class="post-img">
+									<?php the_post_thumbnail( 'featured-thumb' ); ?>
+								</div>
 								<?php the_content(); ?>
+								<hr>
+								<?php comments_template( '', true ); ?>
 						</article>
-					<?php endwhile; endif; ?>	
-				</section>
-			</section>
-			
-			
-		</section>
-	</section>
+				<?php endwhile; ?>
+						<nav class="post-next-nav"><?php next_post(); ?></nav>
+						
+						<nav class="post-prev-nav"><?php previous_post(); ?></nav>
+			</div>
+		</div>
+	</div>
 
 <?php get_footer(); ?>

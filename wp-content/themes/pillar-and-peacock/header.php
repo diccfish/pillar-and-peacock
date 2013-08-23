@@ -38,6 +38,7 @@
 	<![endif]-->
 	
 	<?php wp_head(); ?>
+	
 
 </head>
 
@@ -53,12 +54,12 @@
 				<nav class="main-menu clearfix" role="navigation">
 					<?php wp_nav_menu( array( 'container' => '', 'menu' => 'primary_menu' ) ); ?>
 					<ul class="social-icons twelvecol">
-						<li><a href="#"><i class="icon-envelope icon-large"></i></a></li>
-						<li><a href="#"><i class="icon-facebook icon-large"></i></a></li>
-						<li><a href="#"><i class="icon-pinterest icon-large"></i></a></li>
+						<li><a href="mailto:interiors@pillarandpeacock.com"><i class="icon-envelope icon-large"></i></a></li>
+						<li><a href="https://www.facebook.com/pages/Pillar-Peacock/356655867681657"><i class="icon-facebook icon-large"></i></a></li>
+						<li><a href="http://pinterest.com/pillarpeacock/"><i class="icon-pinterest icon-large"></i></a></li>
 					</ul>
 				</nav>
 				
-				<h2 id="tagline">we create clean, classic, effortlessly chic spaces.</h2>
+				<h2 id="tagline">When structure and beauty merge.</h2>
 				
 			</header>
