@@ -14,17 +14,14 @@
 								<div class="post-comments">
 									<?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?>
 								</div>
-								<div class="post-img">
-									<?php the_post_thumbnail( 'featured-thumb' ); ?>
-								</div>
 								<?php the_content(); ?>
 								<hr>
 								<?php comments_template( '', true ); ?>
 						</article>
 				<?php endwhile; ?>
-						<nav class="post-next-nav"><?php next_post(); ?></nav>
+						<nav class="post-next-nav"><?php next_post('%', 'next', 'no'); ?></nav>
 						
-						<nav class="post-prev-nav"><?php previous_post(); ?></nav>
+						<nav class="post-prev-nav"><?php previous_post('%', 'previous', 'no'); ?></nav>
 			</div>
 		</div>
 	</div>

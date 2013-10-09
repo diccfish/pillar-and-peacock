@@ -144,6 +144,67 @@ Pages
 	}
 }
 
+.poi-list {
+	li { 
+		cursor: pointer; 
+		display: block;
+		position: absolute; 
+		line-height: normal; 
+		min-width: 25px; 
+		min-height: 25px; 
+		background: url(../images/icon-poi.svg) no-repeat; 
+		z-index: 1; 
+		left: 20%;
+		top: 10%;
+		span{  
+			background: $pink;
+			color: #fff;
+			display: none; 
+			float: left;
+			font-size: 1em;
+			font-weight: 300;
+			letter-spacing: .15em; 
+			line-height: 30px;
+			margin-left: 40px;
+			padding: 3px 10px;
+			position: relative;
+			text-transform: uppercase;
+			top: -5px;
+		}
+		&:hover span { 
+			z-index: 500; 
+			display: block; 
+			&:before {
+				border-bottom: 10px solid transparent;
+			   	border-right: 10px solid $pink;
+			    border-top: 10px solid transparent;
+			    content: "";
+			    left: -10px;
+			    position: absolute;
+			    top: 8px;
+			    z-index: 9;
+			}
+		}
+		&:nth-child(2) {
+			left: 60%;
+			top: 25%;
+		}
+		&:nth-child(3) {
+			left: 10%;
+			top: 70%;
+		}
+		&:nth-child(4) {
+			left: 50%;
+			top: 65%;
+		}
+		&:nth-child(5) {
+			left: 68%;
+			top: 83%;
+		}
+	}
+}    
+
+
 .contact {
 	article {
 		display: inline-block;
@@ -174,5 +235,19 @@ Pages
 	}
 	input[type=submit] {
 		margin-top: 3.6125em;
+	}
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.floatbox {
+	li.categories {
+		ul {
+			li {
+				display: inline-block;
+			}
+		}
 	}
 }

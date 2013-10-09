@@ -27,8 +27,8 @@ get_header(); ?>
 			<div class="stack-wrap">
 				<object data="<?php bloginfo('template_url'); ?>/images/silhouette-left.svg" type="image/svg+xml" class="silhouette"></object>
 				<h3>Brandeis Short</h3>
-				<p>Authentic | Passionate | Dedicated | Connective | Visual<br /><br />
-				Everyone has a story to tell. When we are able to contribute to that story through design, my passion comes alive. My favorite part of what we do is the process of internalizing what our client has communicated to us and translating it into something tangibly beautiful, unique and true. It has to be right. It has to be authentic. It has to be you. <br /><br />What A says about B: Once a ballerina, always a red-head...simultaneously graceful and fiery.</p>
+				<p>Authentic | Passionate | Dedicated | Intuitive | Visual<br /><br />
+				Everyone has a story to tell. Contributing to that story through design makes my passion come alive. We strive to internalize our client’s vision and translate it into something tangibly beautiful, unique and true. It has to be right. It has to be authentic. It has to be you.<br /><br />What A says about B: Once a ballerina, always a red-head...simultaneously graceful and fiery.</p>
 				<div class="state">
 					<object data="<?php bloginfo('template_url'); ?>/images/tennessee.svg" type="image/svg+xml" id="tennessee" ></object>
 				</div>
@@ -40,7 +40,7 @@ get_header(); ?>
 				<object data="<?php bloginfo('template_url'); ?>/images/silhouette.svg" type="image/svg+xml" class="silhouette"></object>
 				<h3>Adrianne Bugg</h3>
 				<p>Visual | Artistic | Driven | Zealous | Inspired<br /><br />
-				It makes me smile when I walk into a room in my house that is carefully designed and totally "me". It makes me even happier when we make our clients feel this way; that their space is unique to them, loving it so much that I know we've done what we were hired to do: partner with our client to look through the design lens and make the collective vision come to life. It's the fulfillment of my own dream that I get to help fulfill dreams of others. What B says about A: Bold enough to wear a pixie, old-school enough to only wear linen after Easter.</p>				
+				I smile when I walk into a room in my house that is carefully designed and totally "me". We work to give our clients that same feeling through seamless design. Looking through the design lens together, we make a collective vision come to life. Then we’re all smiles.<br /><br />What B says about A: Bold enough to wear a pixie, old-school enough to only wear linen after Easter.</p>				
 				<div class="state">
 					<object data="<?php bloginfo('template_url'); ?>/images/virginia.svg" type="image/svg+xml" id="virginia"></object>
 				</div>
@@ -50,10 +50,28 @@ get_header(); ?>
 </section>
 
 <section class="wrap clearfix">
+
+	<div class="section-wrap">
+		<h3 class="section-title">Essentials</h3>
+		<article class="page-image image-map">
+		
+			<ul class="poi-list">
+				<li><span>Rendered Floor Plans</span></li>
+				<li><span>Finishing Touches</span></li>
+				<li><span>Pantone Chips</span></li>
+				<li><span>Personal Notes</span></li>
+				<li><span>Prisma Markers</span></li>
+			</ul>
+			
+			<img src="<?php bloginfo('template_url'); ?>/images/A_B_Objects.jpg" alt="About Pillar &amp; Peacock: Brandeis and Adrianne">
+		</article>
+	</div>
 	<section class="twelvecol first clearfix process-lead">
-			<p>In the early days, Adrianne pursued a Finance degree at Tulane University in New Orleans. Adrianne cut her teeth in the business world while playing with art and design on the side. She brings the necessary skills to run a business while also having that innate sense of design you just can't teach. <br /><br />
-			Brandeis obtained her degree in Art History and Dance then decided to pursue interior design at Virginia Commonwealth University in Richmond, VA. After obtaining her Interior Design degree, Brandeis worked with 3North, an architecture, interior design firm. She also has that unteachable sense of design and adds a critical depth of technical experience to the table that makes every project seamless.<br /><br />
-			Together we have over 10 years of experience in the design field. We have worked on every kind of project: boutique hospitality such as Bedford Springs Resort and Grove Park Inn, to high-end residential design, to additions, renovations, and design from the ground up. Our individual experiences make us the perfect complement to each other and to your design project. We truly are "the perfect balance of form and function."</p>
+			<p>In the early days, Adrianne was all business, earning a finance degree at Tulane University in New Orleans. She cut her teeth at several firms including Smith Barney and Wachovia Securities while dabbling with art and design on the side. Her interest in design soon matched her business sense. Adrianne has all the necessary skills to run a successful firm and also that innate sense of design you just can't teach. She’s an unusual amalgam of creativity and practicality- and an extraordinary asset to each and every project.<br /><br />
+Brandeis, always immersed in arts, studied art history and dance before heading to Richmond, Virginia to acquire a degree in interior design at Virginia Commonwealth University. She felt honored to work at 3North, an innovative and distinguished architecture and interior design firm for eight years. Brandeis’ preternatural sense of design, proportion, and beauty, as well as her extensive technical experience makes her an ideal project manager.
+<br /><br />
+Together we have over 10 years of solid experience in design. We have worked on every kind of project: from boutique hospitality (The Bedford Springs Resort, The Grove Park Inn), to high-end residential design, to additions, renovations, and comprehensive design from the ground up. Our individual experiences make us the perfect complement to each other and to your design project. We truly are "the perfect balance of form and function."</p>
+		<h5>Let's create something beautiful.</h5>
 		
 		<a href="/process" class="button-box">The Process</a>	
 	</section>	

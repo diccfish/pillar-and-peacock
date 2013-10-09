@@ -21,8 +21,8 @@ get_header(); ?>
 					
 					<article>
 						<p>We’re located in two different zip codes but travel frequently. We’ll come to you for your big projects. Just drop us a line or give either of us a call and we’ll talk.</p>
-						<p>Adrianne xxx-xxx-xxxx </p>
-						<p>Brandeise xxx-xx-xxx</p>
+						<p>Adrianne 804-306-3275</p>
+						<p>Brandeis 615-663-6295</p>
 					</article>
 				</section>
 				
