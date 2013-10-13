@@ -2770,7 +2770,7 @@ hr {
   display: none;
 }
 .post-content .pinterest-pin a, .post .pinterest-pin a {
-  /* Overwriting defualt pinterest styles with importants ... Relly Annoying */
+  /* Overwriting defualt pinterest styles with importants ... Really Annoying */
   position: absolute !important;
   vertical-align: middle !important;
 }
@@ -3772,6 +3772,25 @@ you can add resource intensive styles.
     width: 0 !important;
   }
   .post-content:hover .pinterest-pin, .post:hover .pinterest-pin {
+    opacity: 1;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+    -transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease;
+  }
+  .post-content.single .pinterest-pin a:before, .post.single .pinterest-pin a:before {
+    right: 10px;
+    top: 20px;
+  }
+  .post-content.single:hover .pinterest-pin, .post.single:hover .pinterest-pin {
+    opacity: 0;
+  }
+  .post-content.single p, .post.single p {
+    position: relative;
+  }
+  .post-content.single p:hover .pinterest-pin, .post.single p:hover .pinterest-pin {
     opacity: 1;
     -webkit-transition: opacity 0.4s ease;
     -moz-transition: opacity 0.4s ease;
